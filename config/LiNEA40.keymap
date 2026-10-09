@@ -15,6 +15,11 @@
 #define SCROLL 5
 #define WIRELESS 6
 
+&zip_temp_layer {
+    // 左クリックのJキーを押したときだけAMLを維持する
+    excluded-positions = <16>;
+};
+
 //mouse cursol
 
 &mmv {
@@ -53,6 +58,9 @@
 };
 
 &trackball_listener {
+    // トラックボール操作中と停止後600msの間、MOUSEレイヤーを有効にする
+    input-processors = <&zip_temp_layer MOUSE 600>;
+
     scroller {
         layers = <SCROLL>;
         input-processors =
