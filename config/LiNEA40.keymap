@@ -89,13 +89,13 @@
             key-positions = <11 12>;
         };
 
-        DeleteKey {
-            bindings = <&kp DEL>;
+        BrowserForward {
+            bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <7 8>;
         };
 
-        InsertKey {
-            bindings = <&kp INS>;
+        BrowserBack {
+            bindings = <&kp LG(LEFT_ARROW)>;
             key-positions = <6 7>;
         };
 
@@ -109,15 +109,6 @@
             key-positions = <18 17>;
         };
 
-        PrevClick {
-            bindings = <&mkp MB4>;
-            key-positions = <27 28>;
-        };
-
-        ClickNext {
-            bindings = <&mkp MB5>;
-            key-positions = <26 27>;
-        };
     };
 
     behaviors {
