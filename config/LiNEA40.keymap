@@ -20,6 +20,11 @@
     excluded-positions = <16>;
 };
 
+&lt {
+    // 素早く2回押して2回目を長押しした場合、タップ側のキーをリピートする
+    quick-tap-ms = <200>;
+};
+
 //mouse cursol
 
 &mmv {
