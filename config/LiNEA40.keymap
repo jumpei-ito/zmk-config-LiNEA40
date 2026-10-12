@@ -25,6 +25,11 @@
     quick-tap-ms = <200>;
 };
 
+&mt {
+    // Mod-Tapでも素早く2回押して2回目を長押しした場合、タップ側のキーをリピートする
+    quick-tap-ms = <200>;
+};
+
 //mouse cursol
 
 &mmv {
