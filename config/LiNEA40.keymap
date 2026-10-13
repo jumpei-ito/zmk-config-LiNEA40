@@ -81,6 +81,16 @@
 };
 
 / {
+    macros {
+        double_click: double_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&mkp MB1 &mkp MB1>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -99,8 +109,8 @@
             key-positions = <6 7>;
         };
 
-        CenterClick {
-            bindings = <&mkp MB3>;
+        DoubleClick {
+            bindings = <&double_click>;
             key-positions = <17 16>;
         };
 
